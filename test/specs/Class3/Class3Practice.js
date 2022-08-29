@@ -1,7 +1,7 @@
 const { expect , assert } = require("chai");
 describe('Verify login form', () => {
-//finding web element by partial attribute name and see if lelement is enabled
-    it.only('Verify login button default state', async() => {
+// finding web element by partial attribute name and see if lelement is enabled
+    it('Verify login button default state', async() => {
         await browser.url('https://www.facebook.com')
         await browser.pause(2000)
 
