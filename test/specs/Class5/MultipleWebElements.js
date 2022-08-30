@@ -42,7 +42,7 @@ describe('Find elements scenarios', () => {
        await browser.pause(5000)
     });
 
-    it.only('Select September 26 as check in date and October 4th as checkout date', async () => {
+    it('Select September 26 as check in date and October 4th as checkout date', async () => {
         await browser.url('https://www.hotels.com')
         await browser.pause(2000)
 
@@ -72,7 +72,5 @@ describe('Find elements scenarios', () => {
         await browser.pause(20000);
 
     });
-
-    
 
 });
