@@ -4,6 +4,7 @@ loginEmailLocator = '#email';
 loginPwdLocator = '#pass';
 loginButtonLocator = '<button>'
 creatNewAcctLocator = '=Create new account'
+errorMsgLocator = '//div[starts-with(text(), "The email or mobile number you entered")]'
 commands = new Commands()
 
 
@@ -34,6 +35,9 @@ async login(username, password){
 }
 async clickCreateNewAcct() {
     await this.commands.clickWebElement(this.creatNewAcctLocator)
+}
+async loginErrorMsg() {
+    return await this.commands.getTextFromWebElement(this.errorMsgLocator)
 }
 
 

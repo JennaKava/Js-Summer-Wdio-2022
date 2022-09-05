@@ -1,7 +1,7 @@
 const Homepage = require("../POM/Facebook/Homepage")
 const SignupPage = require("../POM/Facebook/SignupPage")
 
-const { expect } = require("chai");
+
 
 
 
@@ -14,7 +14,7 @@ describe('Sign Up', () => {
         await browser.pause(3000)
         await hPage.clickCreateNewAcct()
         await browser.pause(3000)
-        await sPage.selectBirthDate('12', 'Nov', '1990')
+        await sPage.selectBirthDate('Nov', '12', '1990')
         await browser.pause(2000)
         
     });
